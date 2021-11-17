@@ -1,15 +1,59 @@
 
+// Example 1
+
+// const data = {
+//     "fruits": [{
+//         "name": "Apple",
+//         "priceKg": 1.00,
+//         "qtyMg": [300, 300,300]
+//     }],
+//     {
+//         "name": "Avocado",
+//         "priceKg": 10.00,
+//         "qtyMg": [300, 300]
+//     }],
+//     "shiped": 1.00
+// };
+
+// Example 2
+
+// const data = {
+//     "fruits": [{
+//         "name": "Apple",
+//         "priceKg": 4.00,
+//         "qtyMg": [250]
+//     }],
+//     "shiped": 1.00
+// };
+
+
 const data = {
     "fruits": [{
         "name": "Apple",
-        "priceKg": 4.00,
-        "qtyMg": [250]
-    }],
-    // {
-    //     "name": "Avocado",
-    //     "priceKg": 10.00,
-    //     "qtyMg": [300, 300]
-    // }],
+        "priceKg": 1.00,
+        "qtyMg": [300]
+    },
+    {
+    
+        "name": "Avocado",
+        "priceKg": 10.00,
+        "qtyMg": [300]
+    },
+    {
+        "name": "Apple",
+        "priceKg": 1.00,
+        "qtyMg": [300]
+    },
+    {
+        "name": "Apple",
+        "priceKg": 1.00,
+        "qtyMg": [300]
+    },
+      {
+        "name": "Avocado",
+        "priceKg": 10.00,
+        "qtyMg": [300]
+    }]
     "shiped": 1.00
 };
 
