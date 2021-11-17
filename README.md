@@ -5,7 +5,7 @@ Calculate the price of packages of fruit.
 
 ## Request Structure
 
-Example of a response after executing the function.
+Structure for JSON request/input
 
 ```bash
 {
