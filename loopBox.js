@@ -53,7 +53,7 @@ const data = {
         "name": "Avocado",
         "priceKg": 10.00,
         "qtyMg": [300]
-    }]
+    }],
     "shiped": 1.00
 };
 
