@@ -79,10 +79,6 @@ function calculatedBoxes() {
         } while (maxPk <= 1000)
     }
 
-    console.log({
-        price: '€ ' + totalAmount,
-        result
-    })
     return {
         price: '€ ' + totalAmount,
         result
