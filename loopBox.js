@@ -3,17 +3,17 @@ const data = {
     "fruits": [{
         "name": "Apple",
         "priceKg": 4.00,
-        "qtyMg": [900, 400, 300]
-    },
-    {
-        "name": "Avocado",
-        "priceKg": 10.00,
-        "qtyMg": [250, 450]
+        "qtyMg": [250]
     }],
+    // {
+    //     "name": "Avocado",
+    //     "priceKg": 10.00,
+    //     "qtyMg": [300, 300]
+    // }],
     "shiped": 1.00
 };
 
-calculatedBoxes(data);
+console.log(calculatedBoxes(data));
 
 function calculatedBoxes() {
     let totalAmount = 0;
@@ -78,12 +78,26 @@ function calculatedBoxes() {
 
         } while (maxPk <= 1000)
     }
+    //Calculated price per package
+    let detail = [];
+    result.map(obj => {
+      let price = 0;
+      obj.map(item =>{
+            const [number,metric, fruit] = item.split(" ");
+            const priceKgPerFruit = data.fruits.find(x => x.name == fruit).priceKg;
+            price += ((number*priceKgPerFruit)/ 1000);
 
-    return {
-        price: '€ ' + totalAmount,
-        result
-    }
+      })
+      detail.push({
+        priceBox: '€ ' +parseFloat(price + (1*data.shiped)).toFixed(2),
+        detail : obj
+      })
+    })
+
+    return JSON.stringify({
+        totalAmount: '€ ' + totalAmount,
+        detail
+    });
 
 
 }
-
