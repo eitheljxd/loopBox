@@ -6,7 +6,7 @@
 //         "name": "Apple",
 //         "priceKg": 1.00,
 //         "qtyMg": [300, 300,300]
-//     }],
+//     },
 //     {
 //         "name": "Avocado",
 //         "priceKg": 10.00,
