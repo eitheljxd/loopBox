@@ -2,6 +2,72 @@
 
 Calculate the price of packages of fruit.
 
+
+## Request Structure
+
+Example of a response after executing the function.
+
+```bash
+{
+  "fruits": [
+    {
+      "name": string,
+      "priceKg": numer,
+      "qtyMg": array
+    } 
+  ],
+  "shiped": number
+}
+```
+
+
+## Request Example
+
+Example of a response after executing the function.
+
+```bash
+{
+  "fruits": [
+    {
+      "name": "Apple",
+      "priceKg": 1,
+      "qtyMg": [
+        300
+      ]
+    },
+    {
+      "name": "Avocado",
+      "priceKg": 10,
+      "qtyMg": [
+        300
+      ]
+    },
+    {
+      "name": "Apple",
+      "priceKg": 1,
+      "qtyMg": [
+        300
+      ]
+    },
+    {
+      "name": "Apple",
+      "priceKg": 1,
+      "qtyMg": [
+        300
+      ]
+    },
+    {
+      "name": "Avocado",
+      "priceKg": 10,
+      "qtyMg": [
+        300
+      ]
+    }
+  ],
+  "shiped": 1
+}
+```
+
 ## Response Example
 
 Example of a response after executing the function.
